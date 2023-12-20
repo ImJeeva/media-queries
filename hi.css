@@ -1,0 +1,91 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+/* general class*/
+html{
+    scroll-behavior: smooth;
+} 
+
+body{
+    font-size: 1.5rem  ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: gray;
+    background-image: radial-gradient(white,gray);
+    display: flex;
+    flex-direction: column;
+}
+header,footer{
+    position: sticky;
+    background-color: rgb(30, 12, 92);
+    color: white;
+    text-align: center;
+}
+header{
+    top: 0;
+}
+nav{
+    background-color: white;
+    font-weight: bolder;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+
+}
+nav a,
+nav a:visited{
+    color: #000;
+}
+    nav a:hover,
+    nav a:focus{
+        color: blueviolet;
+    } 
+
+main{
+    flex-grow:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+footer{
+    bottom: 0;
+}
+/*profile card*/
+.card{
+    scroll-margin-top: rem;
+    width: min(100%,350px);
+    background-color: beige;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card figure{
+    display: flex;
+    flex-flow: column-reverse;
+}
+.card img{
+    border: 5px double #333;
+    border-radius: 50%;
+}
+.card figcaption{
+    font-weight: bold;
+    margin: 1rem;
+    
+    text-align: center;
+}
+
